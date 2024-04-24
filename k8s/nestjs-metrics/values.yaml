@@ -1,0 +1,15 @@
+prometheus:
+  alertmanager:
+    enabled: false
+
+  pushgatway:
+    enabled: false
+
+  nodeExporter:
+    enabled: false
+
+grafana:
+#  ingress:   [for azure, aws and other clouds to run the grafana over http load balancer
+#    enabled: true
+   service:
+     type: NodePort
